@@ -57,7 +57,6 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 
-
 # agregar apps para Auth - paso 3
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
@@ -151,6 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # agregar apps para Auth - paso 4
 LOGIN_REDIRECT_URL = reverse_lazy('index')
+SITE_ID = 2
 
 # agregar información para
 REST_FRAMEWORK = {
